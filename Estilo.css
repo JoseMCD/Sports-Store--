@@ -1,0 +1,286 @@
+
+footer {
+    /*pie de pagina*/
+    background:#333;
+    opacity: 0.8;
+    color: #fff;
+    clear: both;
+    /*limpia los float*/
+    padding: 10px 0px;
+    /*10 hacia arriba y 0 a los lados*/
+    text-align: center;
+    font-size: 15px;
+}
+
+.imgProducto {
+    /*productos*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: #2874A6;
+    width: 250px;
+    height: 250px;
+}
+
+#tabla-precios {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px
+}
+
+/*Columnas*/
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.precio-col {
+    display: inline-block;
+    background-color: #f3f3f3;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    display: inline-block;
+    box-shadow: 0px 2px 5px #ddd
+}
+
+@media screen and (min-width:768px) {
+
+    /*asocia un grupo objetos anidadas, en un bloque */
+    .precio-col {
+        width: 32%;
+        float: left;
+        margin-right: 2%
+    }
+
+    .precio-col:last-child {
+        margin-right: 0
+    }
+
+}
+
+/*Headers*/
+
+.precio-col-header {
+    background-color: #333;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+}
+
+.precio-col:nth-child(2) .precio-col-header {
+    background-color: #dd9933
+}
+
+.precio-col-header h3 {
+    color: #f3f3f3;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 0
+}
+
+.precio-col-header p {
+    text-align: center;
+    color: #f3f3f3;
+    font-size: 14px;
+    margin-bottom: 0
+}
+
+/*Características*/
+
+.precio-col-features {
+    text-align: center;
+    display: block;
+    padding: 0 20px 20px 20px
+}
+
+.precio-col-features p {
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+    border-top: 1px solid #ddd
+}
+
+.precio-col-features p:first-child,
+.precio-col-features p:last-child {
+    border-top: none
+}
+
+/*boton comprar*/
+
+.precio-col-comprar {
+    padding: 10px;
+    max-width: 250px;
+    text-align: center;
+    background-color: #dd9933;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    border: 2px solid #dd9933;
+    transition: all 0.3s
+}
+
+.precio-col-comprar a {
+    color: #f3f3f3;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.3s
+}
+
+.precio-col-comprar:hover{
+    background-color: #f3f3f3;
+    transition: all 0.3s
+}
+
+.precio-col-comprar:hover a {
+    color: #dd9933;
+    transition: all 0.3s
+}
+
+/*encabezado*/
+#main-header {
+    background: #333;
+    color: white;
+    height: 80px;
+}
+
+#main-header a {
+    color: white;
+}
+
+
+/*video*/
+video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+/*ordena el area de texto en ¨Quienes somos¨*/
+.body-quienessomos{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 130%;
+    z-index: -1;   
+}
+.main-quienessomos {
+    width: 100%;
+    /*porcentajess para diseño responsivo*/
+    margin: 20px, auto;
+}
+
+.quienessomos {
+    padding: 180px;
+    width: 70%;
+    /*del total de area del dispositivo*/
+    /*margin-right:1%; separación entre bloques*/
+    float: left;
+    /*envia contenido a la izquierda*/
+}
+.bodyquienessomos{
+    background-image: url('personal.png');
+    background-repeat:repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-size: 90rem;
+
+ 
+}
+
+body{
+    height: 100%; 
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #F4E194; 
+  }  
+/*formulario*/
+  .contact_form{  
+    width: 460px; 
+    height: auto;
+    margin: 5px auto;
+    border-radius: 10px;  
+    padding-top: 80px;
+    padding-bottom: 20px;  
+    background-color:#A9A7A1; 
+    padding-left: 30px; 
+  }
+  
+  
+  input{
+    background-color: #fbfbfb ; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+
+  label{
+    display: block; 
+    float: center;  
+  }
+  
+  
+  button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #dd9933; 
+    border-color: #dd9933; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+    color:#0e0e0e; 
+    font-size: 15px;
+
+  }
+  button:hover{
+    background-color: #f3f3f3;
+    transition: all 0.3s
+}
+
+  button:hover a {
+    color: #dd9933;
+    transition: all 0.3s
+}  
+ 
+    h1{
+    font-size: 39px;  
+    text-align: letf; 
+    padding-bottom: 20px; 
+    color: #0e0e0e;
+  }
+ 
+  .bodyclientes{
+    background-image: url('fondoformulario.png');
+    background-repeat:repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-size: 97rem;
+  }  
+
+  .bodyprincipal{
+    background-image: url('fondoprincipal.png');
+    background-repeat: no-repeat;
+    background-size : cover;
+    height : 10vh;
+
+ 
+  } 
+  
+  
+  
+ 
