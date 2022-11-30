@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>sports store</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='listas.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Estilo.css'>
+    <script src='main.js'></script>
+</head>
+<body class="bodyclientes">
+    <header id="main-header">
+		
+		<a id="logo-header" >
+			<span class="site-name">SPORTS STORE</span>
+			<span class="site-desc"> La tienda de los campeones. </span>
+		</a> <!--etiquetas span generalmente envuelven secciones de texto con fines de estilo o para agregar atributos a una sección de texto sin crear una nueva línea de contenido.-->
+
+		<nav>
+			<ul>
+				<li><a href="quienessomos.html">Quienes somos</a></li>
+				<li><a href="productos.html">Productos</a></li>
+				<li><a href="clientes.html">Contáctanos</a></li>
+			</ul>
+		</nav><!-- / nav -->
+
+	</header><!-- / #main-header -->
+    <body>  
+  
+        <!-- formulario de contacto en html y css -->  
+      
+        <div class="contact_form">
+      
+          <div class="formulario">      
+            <h1  >Formulario de contacto</h1>
+
+                <form action="submeter-formulario.php" method="post">       
+      
+                  
+                      <p>
+                        <label for="nombre" class="colocar_nombre">Nombre
+                        </label>
+                          <input type="text" name="introducir_nombre" id="nombre" placeholder="Escribe tu nombre">
+                      </p>
+
+                      <p>
+                        <label for="telefone" class="colocar_telefono">Teléfono
+                        </label>
+                          <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                      </p> 
+                      <p>
+                        <label for="email" class="colocar_email">Email
+                        </label>
+                          <input type="email" name="introducir_email" id="email" placeholder="Escribe tu Email">
+                      </p>
+                      <label for="producto">Selecciona producto</label>
+                      <select name="menu">
+                      <option>Conjunto deportivo mujer</option>
+                      <option>Conjunto deportivo hombre</option>
+                      <option>Basics - Mancuernas de neopreno</option>
+                      <option>Mochila Escolar Juvenil</option>
+                      <option>Tenis para Hombre</option>
+                      <option>Tenis para Mujer</option>
+                      </select><br><br> 
+
+                      <label for="cantidad">Cantidad</label>
+                      <select name="cantidad">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      </select> <br><br> 
+
+                      <label for="metodopago">Forma de pago</label>
+
+                      <select name="menu">
+                      <option>Tarjeta</option>
+                      <option>Depósito</option>
+                      <option>Pago en Oxxo</option>
+                      </select> <br><br>                 
+
+                      <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+                      <button type="reset" name="borra_formulario" id="borrar">Borrar</button>                                                      
+                                      
+                </form>
+          </div>  
+        </div>
+        <footer>   
+            <p> Juan Manuel Ortiz Huerta.</p>
+            <p> Hector Hugo Campos Hernandez.</p>
+            <p>Jose Manuel Cedillo Delgado.</p>
+        </footer>      
+      </body>
+      </html>
+      
